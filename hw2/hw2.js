@@ -143,7 +143,9 @@ switch (plan){
 // ---5
 let a = +prompt('Enter first number')
 let b = +prompt('Enter second number')
-a >= b ? console.log(a):console.log(b);
+if (a > b) {console.log(a)}
+else if (b > a) {console.log(b)}
+else {console.log('Ваші числа рівні')}
 
 // ---6
 let x1;
