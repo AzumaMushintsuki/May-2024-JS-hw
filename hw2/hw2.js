@@ -107,11 +107,12 @@ x !== 0 ? console.log('Вірно'):console.log('Невірно')
 
 // ---2
 let time;
-let square; // За необхідності можна замінити на console.log
-if (time < 15) {square = 1}
-else if (time < 30) {square = 2}
-else if (time < 45) {square = 3}
-else {square = 4}
+let quarter; // За необхідності можна замінити на console.log
+if (time < 0 || time >= 60 || typeof (time) !== "number") {quarter = 'Invalid number'}
+else if (time < 15) {quarter = 1}
+else if (time < 30) {quarter = 2}
+else if (time < 45) {quarter = 3}
+else {quarter = 4}
 
 // ---3
 let day;
