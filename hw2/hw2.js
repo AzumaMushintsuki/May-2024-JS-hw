@@ -103,12 +103,7 @@ let temperature = [
 // ---- If
 // ---1
 let x = +prompt('number for x')
-if(x !== 0){
-    console.log('Вірно')
-}
-else {
-    console.log('Невірно')
-}
+x !== 0 ? console.log('Вірно'):console.log('Невірно')
 
 // ---2
 let time;
