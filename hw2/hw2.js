@@ -149,7 +149,7 @@ else {console.log('Ваші числа рівні')}
 
 // ---6
 let x1;
-if (x1 === 0 || x1 === null || x1 === undefined || x1 === false || x1 === NaN ){x1 = 'default'}
+if (!x1){x1 = 'default'}
 
 // ---7
 let coursesAndDurationArray = [
