@@ -35,10 +35,7 @@ let book4 = {
     pageCount: 316,
     genre: 'SiFy',
     authors: [
-        {
-            name: 'Robert A. Heinlein',
-            age: 80,
-        },
+        {name: 'Robert A. Heinlein', age: 80,},
     ]
 }
 let book5 = {
@@ -46,10 +43,7 @@ let book5 = {
     pageCount: 638,
     genre: 'Fantasy',
     authors: [
-        {
-            name: 'Stephen King',
-            age: 76,
-        },
+        {name: 'Stephen King', age: 76,},
     ]
 }
 
@@ -58,10 +52,7 @@ let book6 = {
     pageCount: 600,
     genre: 'Tutorial',
     authors: [
-        {
-            name: 'Eric Matthes',
-            age: 48,
-        },
+        {name: 'Eric Matthes', age: 48,},
     ]
 }
 
