@@ -145,6 +145,8 @@ switch (plan){
     case 7:
         console.log('Вихідний');
         break;
+    default:
+        console.log('Invalid number')
 }
 
 // ---5
