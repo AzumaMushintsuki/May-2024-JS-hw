@@ -37,7 +37,6 @@ function sortNums(array, direction) {
     switch (direction) {
         case 'ascending':return array.toSorted((a, b) => a - b);
         case 'descending':return array.toSorted((a, b) => b - a);
-        default:return array;
     }
 }
 
