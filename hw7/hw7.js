@@ -107,7 +107,7 @@ const prince = new Prince("Олесь", 28, {material: "crystal", size: 38})
 for (const ashHead of ashHeads) {
     if (ashHead.footSize === prince.foundShoe.size) console.log(`З принцем має жити ${ashHead.name}, ${ashHead.age}`)
 }
-console.log(ashHeads.find((ashHead) => ashHead.footSise === prince.foundShoe.size));
+console.log(ashHeads.find((ashHead) => ashHead.footSize === prince.foundShoe.size));
 
 Array.prototype.forEach = function (){for (const item of this) console.log(item)}
 Array.prototype.filter = function (filter){
