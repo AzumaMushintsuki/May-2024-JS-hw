@@ -83,7 +83,7 @@ class AshHead{
     constructor(name, age, footSize) {
         this.name = name;
         this.age = age;
-        this.footSise = footSize;
+        this.footSize = footSize;
     }
 }
 class Prince extends AshHead{
@@ -105,7 +105,7 @@ ashHeads.push(new AshHead('Соломія', 36, 45));
 ashHeads.push(new AshHead('Баба Галя', 56, 46));
 const prince = new Prince("Олесь", 28, {material: "crystal", size: 38})
 for (const ashHead of ashHeads) {
-    if (ashHead.footSise === prince.foundShoe.size) console.log(`З принцем має жити ${ashHead.name}, ${ashHead.age}`)
+    if (ashHead.footSize === prince.foundShoe.size) console.log(`З принцем має жити ${ashHead.name}, ${ashHead.age}`)
 }
 console.log(ashHeads.find((ashHead) => ashHead.footSise === prince.foundShoe.size));
 
