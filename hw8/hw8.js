@@ -1,8 +1,3 @@
-let user = {
-    id: 1,
-    name: 'name',
-    greeting() {console.log(`Hello, my name is ${this.name}`)}
-}
 function cloneOfObject(obj){
     if (obj){
         let newObj = JSON.parse(JSON.stringify(obj));
@@ -10,3 +5,14 @@ function cloneOfObject(obj){
         return newObj;
     }
 }
+
+
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+coursesAndDurationArray = coursesAndDurationArray.map((value, index)=> ({id: index +1, ...value}));
