@@ -1,8 +1,10 @@
 function cloneOfObject(obj){
     if (obj){
-        let newObj = JSON.parse(JSON.stringify(obj));
-        newObj.__proto__ = obj;
-        return newObj;
+        let clone = JSON.parse(JSON.stringify(obj));
+        for (const key in obj) {
+            if (typeof obj[key] === 'function') clone[key] = obj[key].bind();
+        }
+        return clone;
     }
 }
 
